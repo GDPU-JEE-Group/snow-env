@@ -1,0 +1,1 @@
+chmod +x /snow/snow-env/*.sh
