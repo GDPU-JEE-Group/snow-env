@@ -15,4 +15,8 @@ systemctl restart sshd
 cp ~/.bashrc ~/.bashrc.bak
 cat /snow/snow-env/.env >> ~/.bashrc
 
+# git
+ git config --global user.name "rk30_34"
+ git config --global user.email "973731820@qq.com"
+
 
