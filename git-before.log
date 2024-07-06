@@ -1,0 +1,409 @@
+                                 ###                               ###           ###               
+                                 ###                               ##            ###               
+                                  ##                               ##            ###               
+                            ########                               ##             #######          
+                             ###                                   #######           ###           
+                                                                     #####                         
+                                                                                                   
+                                                                                                   
+                                Welcome to AntDock ARM Server.
+
+Last login: Sat Jul  6 14:33:27 2024 from 192.168.30.161
+root@antdock:~# 
+root@antdock:~# 
+root@antdock:~# docker ps
+-bash: docker: command not found
+root@antdock:~# ll
+-bash: ll: command not found
+root@antdock:~# ls
+root@antdock:~# 
+root@antdock:~# 
+root@antdock:~# 
+root@antdock:~# 
+root@antdock:~# docker 
+-bash: docker: command not found
+root@antdock:~# cd /userdata
+root@antdock:/userdata# ll
+-bash: ll: command not found
+root@antdock:/userdata# ls
+lost+found
+root@antdock:/userdata# clear
+root@antdock:/userdata# 
+root@antdock:/userdata# 
+root@antdock:/userdata# 
+root@antdock:/userdata# ls
+lost+found
+root@antdock:/userdata# ls
+lost+found
+root@antdock:/userdata# scp 192.168.168.88:/root/out/manage-shell ./
+The authenticity of host '192.168.168.88 (192.168.168.88)' can't be established.
+ED25519 key fingerprint is SHA256:EDS4OQWmnLBHBlp0/UBt0CX3kHsbqGqdSS5BLgBt2os.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.168.88' (ED25519) to the list of known hosts.
+root@192.168.168.88's password: 
+scp: download /root/out/manage-shell/: not a regular file
+root@antdock:/userdata# scp -r 192.168.168.88:/root/out/manage-shell ./
+root@192.168.168.88's password: 
+android_common.env                                                                                                                                        100% 1873   767.5KB/s   00:00    
+README.md                                                                                                                                                 100% 7283     2.5MB/s   00:00    
+conf_channel.json                                                                                                                                         100%   12KB   3.8MB/s   00:00    
+tc_in_container.sh                                                                                                                                        100% 2726   840.8KB/s   00:00    
+build_image.sh                                                                                                                                            100% 2506     1.3MB/s   00:00    
+set_gps.sh                                                                                                                                                100% 1138   617.7KB/s   00:00    
+util.sh                                                                                                                                                   100% 8033     2.8MB/s   00:00    
+conf_channel.sh                                                                                                                                           100% 3132   893.3KB/s   00:00    
+set_image.sh                                                                                                                                              100%  420   186.8KB/s   00:00    
+health_check.sh                                                                                                                                           100%  598   281.7KB/s   00:00    
+tc_in_linux.sh                                                                                                                                            100%   10KB   2.5MB/s   00:00    
+usage.sh                                                                                                                                                  100% 3084   903.6KB/s   00:00    
+android_6.conf                                                                                                                                            100%  537   210.8KB/s   00:00    
+android_1.conf                                                                                                                                            100%  537   225.7KB/s   00:00    
+android_0.conf                                                                                                                                            100%  537   196.2KB/s   00:00    
+android_9.conf                                                                                                                                            100%  537   158.7KB/s   00:00    
+android_3.conf                                                                                                                                            100%  537   204.9KB/s   00:00    
+android_7.conf                                                                                                                                            100%  537   199.8KB/s   00:00    
+android_5.conf                                                                                                                                            100%  537   176.0KB/s   00:00    
+android_common.conf                                                                                                                                       100%  711   207.1KB/s   00:00    
+android_4.conf                                                                                                                                            100%  537   197.9KB/s   00:00    
+android_2.conf                                                                                                                                            100%  537   188.3KB/s   00:00    
+android_8.conf                                                                                                                                            100%  537   169.0KB/s   00:00    
+android_6.conf                                                                                                                                            100%  708   237.8KB/s   00:00    
+android_1.conf                                                                                                                                            100%  708   224.2KB/s   00:00    
+android_0.conf                                                                                                                                            100%  708   181.5KB/s   00:00    
+android_9.conf                                                                                                                                            100%  708   230.2KB/s   00:00    
+android_3.conf                                                                                                                                            100%  708   268.1KB/s   00:00    
+android_7.conf                                                                                                                                            100%  708   282.0KB/s   00:00    
+android_5.conf                                                                                                                                            100%  708   212.2KB/s   00:00    
+android_common.conf                                                                                                                                       100%  708   199.4KB/s   00:00    
+android_4.conf                                                                                                                                            100%  708   250.3KB/s   00:00    
+android_2.conf                                                                                                                                            100%  708   204.5KB/s   00:00    
+android_8.conf                                                                                                                                            100%  708   176.6KB/s   00:00    
+androidctl_retcode.json                                                                                                                                   100%   14KB   2.0MB/s   00:00    
+docker-compose.yml                                                                                                                                        100%   11KB   2.0MB/s   00:00    
+android_ctl.sh                                                                                                                                            100%   17KB   2.0MB/s   00:00    
+.env                                                                                                                                                      100% 1267   315.5KB/s   00:00    
+container.conf                                                                                                                                            100%   53    14.4KB/s   00:00    
+container_common.conf                                                                                                                                     100% 1208   289.4KB/s   00:00    
+default_radio.conf                                                                                                                                        100%  337    85.2KB/s   00:00    
+default_mock.prop                                                                                                                                         100%  107    27.3KB/s   00:00    
+root@antdock:/userdata# cd manage-shell/
+root@antdock:/userdata/manage-shell# ls
+android_common.env  androidctl_retcode.json  android_ctl.sh  conf_channel.json  conf_template  docker-compose.yml  mount  README.md  sh
+root@antdock:/userdata/manage-shell# cd ..
+root@antdock:/userdata# mkdir snow
+root@antdock:/userdata# cd manage-shell/
+root@antdock:/userdata/manage-shell# ls
+android_common.env  androidctl_retcode.json  android_ctl.sh  conf_channel.json  conf_template  docker-compose.yml  mount  README.md  sh
+root@antdock:/userdata/manage-shell# sh
+# cd^C
+# cd -
+/userdata
+# 
+root@antdock:/userdata/manage-shell# chsh bash
+chsh: user 'bash' does not exist
+root@antdock:/userdata/manage-shell# chsh /bin/bash
+chsh: user '/bin/bash' does not exist
+root@antdock:/userdata/manage-shell# which bash
+/usr/bin/bash
+root@antdock:/userdata/manage-shell# ls -al /usr/bin/sh
+lrwxrwxrwx 1 root root 4 Jan  5  2023 /usr/bin/sh -> dash
+root@antdock:/userdata/manage-shell# chsh /usr/bin/bash
+bash     bashbug  
+root@antdock:/userdata/manage-shell# chsh /usr/bin/bash
+chsh: user '/usr/bin/bash' does not exist
+root@antdock:/userdata/manage-shell# bash
+root@antdock:/userdata/manage-shell# ls
+android_common.env  androidctl_retcode.json  android_ctl.sh  conf_channel.json  conf_template  docker-compose.yml  mount  README.md  sh
+root@antdock:/userdata/manage-shell# ./android_ctl.sh createImage /userdata/rk3588_docker-android10-user-super.img-20240607.1416.tgz 
+root@antdock:/userdata/manage-shell# docker ps
+bash: docker: command not found
+root@antdock:/userdata/manage-shell# cd ../init-in-arm/sh/
+root@antdock:/userdata/init-in-arm/sh# ls
+build_image.sh          download_docker.sh  install_fping.sh    install_quota.sh  uninstall_docker.sh  util.sh
+create_android_data.sh  install_docker.sh   install_ntpdate.sh  log_file          userdata_check.sh
+root@antdock:/userdata/init-in-arm/sh# ./install_docker.sh 
+Selecting previously unselected package containerd.io.
+(Reading database ... 28472 files and directories currently installed.)
+Preparing to unpack .../containerd.io_1.6.31-1_arm64.deb ...
+Unpacking containerd.io (1.6.31-1) ...
+Setting up containerd.io (1.6.31-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Selecting previously unselected package docker-ce-cli.
+(Reading database ... 28488 files and directories currently installed.)
+Preparing to unpack .../docker-ce-cli_5%3a26.1.0-1~debian.11~bullseye_arm64.deb ...
+Unpacking docker-ce-cli (5:26.1.0-1~debian.11~bullseye) ...
+Setting up docker-ce-cli (5:26.1.0-1~debian.11~bullseye) ...
+Selecting previously unselected package docker-ce.
+(Reading database ... 28687 files and directories currently installed.)
+Preparing to unpack .../docker-ce_5%3a26.1.0-1~debian.11~bullseye_arm64.deb ...
+Unpacking docker-ce (5:26.1.0-1~debian.11~bullseye) ...
+Setting up docker-ce (5:26.1.0-1~debian.11~bullseye) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Selecting previously unselected package docker-compose-plugin.
+(Reading database ... 28699 files and directories currently installed.)
+Preparing to unpack .../docker-compose-plugin_2.26.1-1~debian.11~bullseye_arm64.deb ...
+Unpacking docker-compose-plugin (2.26.1-1~debian.11~bullseye) ...
+Setting up docker-compose-plugin (2.26.1-1~debian.11~bullseye) ...
+Selecting previously unselected package docker-buildx-plugin.
+(Reading database ... 28703 files and directories currently installed.)
+Preparing to unpack .../docker-buildx-plugin_0.14.0-1~debian.11~bullseye_arm64.deb ...
+Unpacking docker-buildx-plugin (0.14.0-1~debian.11~bullseye) ...
+Setting up docker-buildx-plugin (0.14.0-1~debian.11~bullseye) ...
+root@antdock:/userdata/init-in-arm/sh# ls
+build_image.sh          download_docker.sh  install_fping.sh    install_quota.sh  uninstall_docker.sh  util.sh
+create_android_data.sh  install_docker.sh   install_ntpdate.sh  log_file          userdata_check.sh
+root@antdock:/userdata/init-in-arm/sh# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@antdock:/userdata/init-in-arm/sh# cd ..
+root@antdock:/userdata/init-in-arm# cd ..
+root@antdock:/userdata# cd manage-shell/
+root@antdock:/userdata/manage-shell# ls
+android_common.env  androidctl_retcode.json  android_ctl.sh  conf_channel.json  conf_template  docker-compose.yml  mount  README.md  sh
+root@antdock:/userdata/manage-shell# ./android_ctl.sh createImage /userdata/rk3588_docker-android10-user-super.img-20240607.1416.tgz 
+sha256:dd92c15851e404b52906e5ccbf296151b05c6a90bf1ce3ed485292776890cd21
+root@antdock:/userdata/manage-shell# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@antdock:/userdata/manage-shell# docker images
+REPOSITORY   TAG                               IMAGE ID       CREATED              SIZE
+rk3588       RK_ANDROID10-RKR14-root06071421   dd92c15851e4   About a minute ago   2.12GB
+root@antdock:/userdata/manage-shell# ls
+android_common.env  androidctl_retcode.json  android_ctl.sh  conf_channel.json  conf_template  docker-compose.yml  mount  README.md  sh
+root@antdock:/userdata/manage-shell# ./android_ctl.sh start 0 --mac=7c:2a:14:3b:35:da --ip=192.168.30.35 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512281 --androidId=46af8b6feb561edc --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:9d --brand=Google --model=Pixel 2 --gateway=192.168.30.1 --subnet=192.168.30.0/24 --instanceId=92870289188257794
+root@antdock:/userdata/manage-shell# docker ps
+CONTAINER ID   IMAGE                                    COMMAND                  CREATED         STATUS                   PORTS     NAMES
+8daba65ecf29   rk3588:RK_ANDROID10-RKR14-root06071421   "/init androidboot.h…"   4 seconds ago   Up 4 seconds (healthy)             android_0
+root@antdock:/userdata/manage-shell# docker exec -it android_0 sh
+8daba65ecf29:/ # ifconfig
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0 
+          inet6 addr: ::1/128 Scope: Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+eth0      Link encap:Ethernet  HWaddr 7c:2a:14:3b:35:da
+          inet addr:192.168.30.35  Bcast:192.168.30.255  Mask:255.255.255.0 
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:27 errors:0 dropped:4 overruns:0 frame:0 
+          TX packets:14 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:0 
+          RX bytes:2529 TX bytes:1883 
+
+8daba65ecf29:/ # start adbd
+8daba65ecf29:/ # start adbd                                                                                                                                                                
+8daba65ecf29:/ # ls -n 
+total 160
+drwxr-xr-x  38 1000 1000     0 2024-07-06 17:32 acct
+drwxr-xr-x  14 0    0      280 2024-07-06 17:30 apex
+lrwxrwxrwx   1 0    0       11 2024-06-07 23:28 bin -> /system/bin
+lrwxrwxrwx   1 0    0       50 2024-06-07 23:28 bugreports -> /data/user_de/0/com.android.shell/files/bugreports
+drwxrwx---   1 1000 2001  4096 2024-07-06 17:30 cache
+lrwxrwxrwx   1 0    0       19 2024-06-07 23:28 charger -> /system/bin/charger
+drwxr-xr-x   3 0    0        0 1970-01-01 08:00 config
+lrwxrwxrwx   1 0    0       17 2024-06-07 23:28 d -> /sys/kernel/debug
+drwxrwx--x  47 1000 1000  4096 2024-07-06 17:30 data
+drwxr-xr-x   2 0    0     4096 2024-06-07 22:21 debug_ramdisk
+lrwxrwxrwx   1 0    0       23 2024-06-07 23:28 default.prop -> system/etc/prop.default
+drwxr-xr-x  23 0    0     3840 2024-07-06 17:30 dev
+drwxr-xr-x   1 0    0     4096 2024-06-07 23:28 etc
+-rwxr-xr-x   1 0    0      598 2024-07-06 17:14 health_check.sh
+lrwxrwxrwx   1 0    2000    16 2024-06-07 23:28 init -> /system/bin/init
+-rwxr-x---   1 0    2000  1653 2024-06-07 22:21 init.environ.rc
+-rwxr-x---   1 0    2000 33886 2024-06-07 23:04 init.rc
+-rwxr-x---   1 0    2000  8565 2024-06-07 23:01 init.usb.configfs.rc
+-rwxr-x---   1 0    2000  5649 2024-06-07 23:01 init.usb.rc
+-rwxr-x---   1 0    2000   563 2024-06-07 23:01 init.zygote32.rc
+-rwxr-x---   1 0    2000   981 2024-06-07 23:01 init.zygote64_32.rc
+drwxrwxrwx   2 0    0     4096 2024-07-06 17:30 ipc
+drwx------   2 0    0     4096 2024-06-07 23:28 lost+found
+drwxr-xr-x   1 0    0     4096 2024-07-06 17:30 metadata
+drwxr-xr-x  13 0    1000   280 2024-07-06 17:30 mnt
+drwxr-xr-x   4 0    0     4096 2024-06-07 22:21 odm
+drwxr-xr-x   2 0    0     4096 2024-06-07 22:21 oem
+dr-xr-xr-x 361 0    0        0 2024-07-06 17:30 proc
+drwxr-xr-x   9 0    0     4096 2024-06-07 23:26 product
+lrwxrwxrwx   1 0    0       24 2024-06-07 23:28 product_services -> /system/product_services
+drwxr-xr-x   3 0    0     4096 2024-06-07 23:04 res
+drwxr-x---   2 0    2000  4096 2024-06-07 23:04 sbin
+lrwxrwxrwx   1 0    0       21 2024-06-07 23:28 sdcard -> /storage/self/primary
+drwxr-xr-x   4 0    0       80 2024-07-06 17:30 storage
+dr-xr-xr-x  14 0    0        0 2024-07-06 17:30 sys
+drwxr-xr-x   1 0    0     4096 2024-06-07 23:28 system
+-rwxr-xr-x   1 0    0     2726 2024-07-06 17:14 tc_in_container.sh
+-rw-r--r--   1 0    0     2608 2024-06-07 22:21 ueventd.rc
+drwx------   3 0    0     4096 2024-07-06 17:30 var
+drwxr-xr-x   1 0    0     4096 2024-06-07 23:27 vendor
+8daba65ecf29:/ # ln -s                                                                                                                                                                     
+ln: Needs 1 argument (see "ln --help")
+1|8daba65ecf29:/ # ln --help                                                                                                                                                               
+usage: ln [-sfnv] [FROM...] TO
+
+Create a link between FROM and TO.
+With only one argument, create link in current directory.
+
+-s      Create a symbolic link
+-f      Force the creation of the link, even if TO already exists
+-n      Symlink at destination treated as file
+-v      Verbose
+
+8daba65ecf29:/ # ln -s /userdata/snow /snow
+ln: cannot create symbolic link from '/userdata/snow' to '/snow': Read-only file system
+1|8daba65ecf29:/ # ^D 
+root@antdock:/userdata/manage-shell# ln -s /userdata/snow /snow
+root@antdock:/userdata/manage-shell# cd /snow
+root@antdock:/snow# ls
+root@antdock:/snow# git clone git@github.com:chaixiang2002/snow-env.git
+bash: git: command not found
+root@antdock:/snow# apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  git-man libcurl3-gnutls liberror-perl
+Suggested packages:
+  gettext-base git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man libcurl3-gnutls liberror-perl
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9,462 kB of archives.
+After this operation, 48.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Err:1 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 libcurl3-gnutls arm64 7.88.1-10+deb12u5
+  404  Not Found [IP: 202.141.160.110 80]
+Get:2 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 liberror-perl all 0.17029-2 [29.0 kB]
+Get:3 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 git-man all 1:2.39.2-1.1 [2,049 kB]
+Get:4 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 git arm64 1:2.39.2-1.1 [7,023 kB]
+Fetched 9,101 kB in 1s (15.9 MB/s)
+E: Failed to fetch http://mirrors.ustc.edu.cn/debian/pool/main/c/curl/libcurl3-gnutls_7.88.1-10%2bdeb12u5_arm64.deb  404  Not Found [IP: 202.141.160.110 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+root@antdock:/snow# apt update
+Get:1 http://mirrors.ustc.edu.cn/debian bookworm InRelease [151 kB]
+Get:2 http://mirrors.ustc.edu.cn/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://mirrors.ustc.edu.cn/debian bookworm-backports InRelease [56.6 kB]
+Get:4 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 Packages [8,688 kB]
+Get:5 http://mirrors.ustc.edu.cn/debian bookworm/main Translation-en [6,109 kB]
+Get:6 http://mirrors.ustc.edu.cn/debian bookworm/contrib arm64 Packages [45.7 kB]
+Get:7 http://mirrors.ustc.edu.cn/debian bookworm/contrib Translation-en [48.8 kB]
+Get:8 http://mirrors.ustc.edu.cn/debian bookworm/non-free arm64 Packages [75.8 kB]
+Get:9 http://mirrors.ustc.edu.cn/debian bookworm/non-free Translation-en [67.0 kB]
+Get:10 http://mirrors.ustc.edu.cn/debian bookworm/non-free-firmware arm64 Packages [5,832 B]
+Get:11 http://mirrors.ustc.edu.cn/debian bookworm-backports/main arm64 Packages.diff/Index [63.3 kB]
+Get:12 http://mirrors.ustc.edu.cn/debian bookworm-backports/main Translation-en.diff/Index [63.3 kB]
+Get:13 http://mirrors.ustc.edu.cn/debian bookworm-backports/non-free Translation-en.diff/Index [2,732 B]
+Get:14 http://mirrors.ustc.edu.cn/debian bookworm-backports/main arm64 Packages T-2024-07-06-0804.36-F-2024-06-05-2005.29.pdiff [67.1 kB]
+Get:14 http://mirrors.ustc.edu.cn/debian bookworm-backports/main arm64 Packages T-2024-07-06-0804.36-F-2024-06-05-2005.29.pdiff [67.1 kB]
+Get:15 http://mirrors.ustc.edu.cn/debian bookworm-backports/main Translation-en T-2024-07-05-1407.09-F-2024-06-05-2005.29.pdiff [13.8 kB]
+Get:15 http://mirrors.ustc.edu.cn/debian bookworm-backports/main Translation-en T-2024-07-05-1407.09-F-2024-06-05-2005.29.pdiff [13.8 kB]
+Get:16 http://mirrors.ustc.edu.cn/debian bookworm-backports/non-free Translation-en T-2024-06-25-1410.16-F-2024-06-25-1410.16.pdiff [442 B]
+Get:16 http://mirrors.ustc.edu.cn/debian bookworm-backports/non-free Translation-en T-2024-06-25-1410.16-F-2024-06-25-1410.16.pdiff [442 B]
+Fetched 15.5 MB in 2s (6,551 kB/s)                                                                                 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+41 packages can be upgraded. Run 'apt list --upgradable' to see them.
+N: Repository 'http://mirrors.ustc.edu.cn/debian bookworm InRelease' changed its 'Version' value from '12.5' to '12.6'
+root@antdock:/snow# git clone git@github.com:chaixiang2002/snow-env.git
+bash: git: command not found
+root@antdock:/snow# apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  curl git-man libcurl3-gnutls libcurl4 liberror-perl
+Suggested packages:
+  gettext-base git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man libcurl3-gnutls liberror-perl
+The following packages will be upgraded:
+  curl libcurl4
+2 upgraded, 4 newly installed, 0 to remove and 39 not upgraded.
+Need to get 1,035 kB/10.1 MB of archives.
+After this operation, 48.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 curl arm64 7.88.1-10+deb12u6 [308 kB]
+Get:2 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 libcurl4 arm64 7.88.1-10+deb12u6 [366 kB]
+Get:3 http://mirrors.ustc.edu.cn/debian bookworm/main arm64 libcurl3-gnutls arm64 7.88.1-10+deb12u6 [361 kB]
+Fetched 1,035 kB in 0s (2,559 kB/s)       
+(Reading database ... 28706 files and directories currently installed.)
+Preparing to unpack .../0-curl_7.88.1-10+deb12u6_arm64.deb ...
+Unpacking curl (7.88.1-10+deb12u6) over (7.88.1-10+deb12u5) ...
+Preparing to unpack .../1-libcurl4_7.88.1-10+deb12u6_arm64.deb ...
+Unpacking libcurl4:arm64 (7.88.1-10+deb12u6) over (7.88.1-10+deb12u5) ...
+Selecting previously unselected package libcurl3-gnutls:arm64.
+Preparing to unpack .../2-libcurl3-gnutls_7.88.1-10+deb12u6_arm64.deb ...
+Unpacking libcurl3-gnutls:arm64 (7.88.1-10+deb12u6) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../3-liberror-perl_0.17029-2_all.deb ...
+Unpacking liberror-perl (0.17029-2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../4-git-man_1%3a2.39.2-1.1_all.deb ...
+Unpacking git-man (1:2.39.2-1.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../5-git_1%3a2.39.2-1.1_arm64.deb ...
+Unpacking git (1:2.39.2-1.1) ...
+Setting up libcurl3-gnutls:arm64 (7.88.1-10+deb12u6) ...
+Setting up liberror-perl (0.17029-2) ...
+Setting up libcurl4:arm64 (7.88.1-10+deb12u6) ...
+Setting up git-man (1:2.39.2-1.1) ...
+Setting up curl (7.88.1-10+deb12u6) ...
+Setting up git (1:2.39.2-1.1) ...
+Processing triggers for libc-bin (2.36-9+deb12u4) ...
+root@antdock:/snow# vim /etc/ssh/
+moduli                    ssh_config.d/             sshd_config.d/            ssh_host_ecdsa_key.pub    ssh_host_ed25519_key.pub  ssh_host_rsa_key.pub      
+ssh_config                sshd_config               ssh_host_ecdsa_key        ssh_host_ed25519_key      ssh_host_rsa_key          
+root@antdock:/snow# vim /etc/ssh/
+moduli                    ssh_config.d/             sshd_config.d/            ssh_host_ecdsa_key.pub    ssh_host_ed25519_key.pub  ssh_host_rsa_key.pub      
+ssh_config                sshd_config               ssh_host_ecdsa_key        ssh_host_ed25519_key      ssh_host_rsa_key          
+root@antdock:/snow# vim /etc/ssh/ssh_
+ssh_config                ssh_host_ecdsa_key        ssh_host_ed25519_key      ssh_host_rsa_key          
+ssh_config.d/             ssh_host_ecdsa_key.pub    ssh_host_ed25519_key.pub  ssh_host_rsa_key.pub      
+root@antdock:/snow# vim /etc/ssh/ssh_
+ssh_config                ssh_host_ecdsa_key        ssh_host_ed25519_key      ssh_host_rsa_key          
+ssh_config.d/             ssh_host_ecdsa_key.pub    ssh_host_ed25519_key.pub  ssh_host_rsa_key.pub      
+root@antdock:/snow# vim /etc/ssh/ssh_config
+root@antdock:/snow# git clone git@github.com:chaixiang2002/snow-env.git
+Cloning into 'snow-env'...
+warning: You appear to have cloned an empty repository.
+root@antdock:/snow# history
+    1  ifconfig
+    2  cat /etc/network/interfaces.d/eth0 
+    3  vim  /etc/network/interfaces.d/eth0 
+    4  systemctl restart sshd
+    5  passwd root
+    6  ifconfig
+    7  reboot
+    8  ls
+    9  ./android_ctl.sh createImage /userdata/rk3588_docker-android10-user-super.img-20240607.1416.tgz 
+   10  docker ps
+   11  cd ../init-in-arm/sh/
+   12  ls
+   13  ./install_docker.sh 
+   14  ls
+   15  docker ps
+   16  cd ..
+   17  cd ..
+   18  cd manage-shell/
+   19  ls
+   20  ./android_ctl.sh createImage /userdata/rk3588_docker-android10-user-super.img-20240607.1416.tgz 
+   21  docker ps
+   22  docker images
+   23  ls
+   24  ./android_ctl.sh start 0 --mac=7c:2a:14:3b:35:da --ip=192.168.30.35 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512281 --androidId=46af8b6feb561edc --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:9d --brand=Google --model=Pixel 2 --gateway=192.168.30.1 --subnet=192.168.30.0/24 --instanceId=92870289188257794
+   25  docker ps
+   26  docker exec -it android_0 sh
+   27  ln -s /userdata/snow /snow
+   28  cd /snow
+   29  ls
+   30  git clone git@github.com:chaixiang2002/snow-env.git
+   31  apt install git
+   32  apt update
+   33  git clone git@github.com:chaixiang2002/snow-env.git
+   34  apt install git
+   35  vim /etc/ssh/ssh_config
+   36  git clone git@github.com:chaixiang2002/snow-env.git
+   37  history
+root@antdock:/snow# ^C
