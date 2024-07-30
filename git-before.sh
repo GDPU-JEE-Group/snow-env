@@ -23,6 +23,11 @@ git clone git@github.com:chaixiang2002/snow-env.git
 # 切换 sh
 chsh /usr/bin/bash
 
+# arm-init-shell && manage-shell
+scp -r 192.168.168.88:/root/out/arm-init-shell /userdata/
+mkdir -p /userdata/arm-agent/bin
+scp -r 192.168.168.88:/root/out/manage-shell /userdata/arm-agent/bin/
+
 # docker
 scp init-in-arm
 ./install_docker.sh 

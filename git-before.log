@@ -9,32 +9,8 @@
                                 Welcome to AntDock ARM Server.
 
 Last login: Sat Jul  6 14:33:27 2024 from 192.168.30.161
-root@antdock:~# 
-root@antdock:~# 
-root@antdock:~# docker ps
--bash: docker: command not found
-root@antdock:~# ll
--bash: ll: command not found
-root@antdock:~# ls
-root@antdock:~# 
-root@antdock:~# 
-root@antdock:~# 
-root@antdock:~# 
-root@antdock:~# docker 
--bash: docker: command not found
-root@antdock:~# cd /userdata
-root@antdock:/userdata# ll
--bash: ll: command not found
-root@antdock:/userdata# ls
-lost+found
-root@antdock:/userdata# clear
-root@antdock:/userdata# 
-root@antdock:/userdata# 
-root@antdock:/userdata# 
-root@antdock:/userdata# ls
-lost+found
-root@antdock:/userdata# ls
-lost+found
+
+
 root@antdock:/userdata# scp 192.168.168.88:/root/out/manage-shell ./
 The authenticity of host '192.168.168.88 (192.168.168.88)' can't be established.
 ED25519 key fingerprint is SHA256:EDS4OQWmnLBHBlp0/UBt0CX3kHsbqGqdSS5BLgBt2os.
