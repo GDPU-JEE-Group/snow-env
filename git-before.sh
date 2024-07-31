@@ -1,3 +1,6 @@
+# 查看可用ip
+nmap -sn 192.168.168.0/24
+
 # 设置静态ip  
 vim  /etc/network/interfaces.d/eth0 
 ---------
@@ -36,10 +39,10 @@ scp init-in-arm
 scp -r 192.168.168.88:/root/out/manage-shell ./
 
 docker network rm android-mac #删除旧网络
-android_ctl.sh start 0 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:ca --ip=192.168.168.51 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512281 --androidId=46af8b6feb561eda --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2a --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257791
-android_ctl.sh start 1 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:cb --ip=192.168.168.52 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512282 --androidId=46af8b6feb561edb --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2b --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257792
-android_ctl.sh start 2 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:cc --ip=192.168.168.53 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512283 --androidId=46af8b6feb561edc --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2c --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257793
-android_ctl.sh start 3 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:cd --ip=192.168.168.54 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512284 --androidId=46af8b6feb561edd --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2d --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257794
+android_ctl.sh start 0 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:ca --ip=192.168.168.50 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512281 --androidId=46af8b6feb561eda --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2a --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257791
+android_ctl.sh start 1 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:cb --ip=192.168.168.51 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512282 --androidId=46af8b6feb561edb --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2b --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257792
+android_ctl.sh start 2 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:cc --ip=192.168.168.52 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512283 --androidId=46af8b6feb561edc --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2c --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257793
+android_ctl.sh start 3 --images=rk3588:RK_ANDROID10-RKR14-dev06192153   --mac=7c:2a:14:3b:35:cd --ip=192.168.168.53 --cpu=0 --gpu=0 --ram=0 --rom=0 --imei=863935410512284 --androidId=46af8b6feb561edd --serialNo=01MM0Q99SUN9 --wifiMac=04:6d:1c:01:12:2d --brand=Google --model=Pixel 2 --gateway=192.168.168.1 --subnet=192.168.168.0/24 --instanceId=92870289188257794
 
 
 
