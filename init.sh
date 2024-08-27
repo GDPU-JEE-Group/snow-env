@@ -2,6 +2,8 @@
 
 home_path=/snow
 root_path=$home_path/snow-env
+git_repo="https://github.com/GDPU-JEE-Group/snow-env.git"
+git_repo_inland="https://gitee.com/trychar-no1/snow-env.git"
 
 run_cmd() {
     echo -e "\033[0;32mExecuting: $*\033[0m"
@@ -49,8 +51,23 @@ setup_snow() {
 
     # 第四步：检查 /snow/snow-env 是否存在，如果不存在就进行 git clone
     if [ ! -d "/snow/snow-env" ]; then
-        git clone https://github.com/GDPU-JEE-Group/snow-env.git /snow/snow-env
-        echo "git clone 仓库到 /snow/snow-env。"
+        echo "尝试从 $git_repo 克隆仓库到 /snow/snow-env..."
+        
+        # 尝试克隆第一个仓库
+        if git clone $git_repo /snow/snow-env; then
+            echo "成功从 $git_repo 克隆仓库到 /snow/snow-env。"
+        else
+            echo "克隆 $git_repo 失败，尝试从备用仓库 $git_repo_inland 克隆..."
+            
+            # 如果第一个仓库克隆失败，尝试克隆第二个仓库
+            if git clone $git_repo_inland /snow/snow-env; then
+                echo "成功从 $git_repo_inland 克隆仓库到 /snow/snow-env。"
+            else
+                echo "克隆备用仓库 $git_repo_inland 也失败了。"
+                echo "错误：无法克隆仓库，脚本终止。"
+                exit 1
+            fi
+        fi
     else
         echo "/snow/snow-env 已经存在。"
     fi
