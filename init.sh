@@ -92,6 +92,9 @@ setup_snow() {
     # 成功
     echo "成功!"
     echo "source ~/.bashrc"
+    run_cmd "find /userdata/ -name  build_image.sh"
+    run_cmd "find /userdata/ -name  android_ctl.sh"
+    echo "add-path.sh xxxxx/add-path.sh"
 }
 
 # 解析命令行参数
