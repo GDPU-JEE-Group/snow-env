@@ -1,11 +1,11 @@
 # functions.sh
 
 run_cmd() {
-    echo "Executing: $*"
+    echo -e "\033[0;32mExecuting: $*\033[0m"
     "$@"
     local status=$?
     if [ $status -ne 0 ]; then
-        echo "Error: Command failed with status $status"
+        echo -e "\033[0;31mError: Command failed with status $status\033[0m"
         exit $status
     fi
 }
