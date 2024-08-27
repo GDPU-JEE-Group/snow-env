@@ -84,8 +84,14 @@ setup_snow() {
         echo "文件 $fpath 包含keyword $keyword"
     else
         echo "文件 $fpath 不包含keyword $keyword"
-        run_cmd cat $root_path/config >> $fpath
+        echo "cat $root_path/config >> $fpath"
+        cat $root_path/config >> $fpath
     fi
+
+
+    # 成功
+    echo "成功!"
+    echo "成功!"
 }
 
 # 解析命令行参数
