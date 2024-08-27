@@ -70,6 +70,8 @@ setup_snow() {
         fi
     else
         echo "/snow/snow-env 已经存在。"
+        cd $root_path
+        run_cmd git pull
     fi
 
     # 给权限
