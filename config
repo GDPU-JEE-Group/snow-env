@@ -1,0 +1,5 @@
+# snow-env
+alias csnow='cd /snow'
+alias cpath='cd /snow/snow-env'
+
+export PATH="/snow/snow-env:$PATH"
