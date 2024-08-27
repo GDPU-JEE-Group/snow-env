@@ -27,7 +27,9 @@ setup_snow() {
         run_cmd mkdir -p $home_path
     if
     cd $home_path
-    git clone https://github.com/GDPU-JEE-Group/snow-env.git
+    if [ ! -f $root_path ];then
+        run_cmd git clone https://github.com/GDPU-JEE-Group/snow-env.git
+    if
     
     # 给权限
     run_cmd chmod +x $root_path/*.sh
@@ -39,7 +41,7 @@ setup_snow() {
         echo "文件 $fpath 包含keyword $keyword"
     else
         echo "文件 $fpath 不包含keyword $keyword"
-        cat $root_path/config >> $fpath
+        run_cmd cat $root_path/config >> $fpath
     fi
 }
 
