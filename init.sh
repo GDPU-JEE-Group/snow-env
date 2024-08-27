@@ -22,15 +22,39 @@ print_help() {
 
 # 创建/snow目录并下载snow-env文件
 setup_snow() {
-    # 下载创建文件
-    if [ ! -f $home_path ];then
-        run_cmd mkdir -p $home_path
-    if
-    cd $home_path
-    if [ ! -f $root_path ];then
-        run_cmd git clone https://github.com/GDPU-JEE-Group/snow-env.git
-    if
-    
+
+    # 第一步：检查 /userdata 目录是否存在，如果不存在就创建
+    if [ ! -d "/userdata" ]; then
+        mkdir /userdata
+        echo "创建 /userdata 目录。"
+    else
+        echo "/userdata 目录已经存在。"
+    fi
+
+    # 第二步：检查 /userdata/snow 目录是否存在，如果不存在就创建
+    if [ ! -d "/userdata/snow" ]; then
+        mkdir /userdata/snow
+        echo "创建 /userdata/snow 目录。"
+    else
+        echo "/userdata/snow 目录已经存在。"
+    fi
+
+    # 第三步：检查 /snow 是否存在，如果不存在就创建符号链接 /snow 指向 /userdata/snow
+    if [ ! -e "/snow" ]; then
+        ln -s /userdata/snow /snow
+        echo "符号链接 /snow 已创建，指向 /userdata/snow。"
+    else
+        echo "/snow 已经存在。"
+    fi
+
+    # 第四步：检查 /snow/snow-env 是否存在，如果不存在就进行 git clone
+    if [ ! -d "/snow/snow-env" ]; then
+        git clone <仓库地址> /snow/snow-env
+        echo "git clone 仓库到 /snow/snow-env。"
+    else
+        echo "/snow/snow-env 已经存在。"
+    fi
+
     # 给权限
     run_cmd chmod +x $root_path/*.sh
 
