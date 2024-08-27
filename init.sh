@@ -77,7 +77,7 @@ setup_snow() {
 
     # 检查路径是否存在于环境变量中 设置环境变量
     keyword="snow-env"
-    fpath="~/.bashrc"
+    fpath="$HOME/.bashrc"
     if grep -q "$keyword" "$fpath"; then
         echo "文件 $fpath 包含keyword $keyword"
     else
