@@ -49,7 +49,7 @@ setup_snow() {
 
     # 第四步：检查 /snow/snow-env 是否存在，如果不存在就进行 git clone
     if [ ! -d "/snow/snow-env" ]; then
-        git clone <仓库地址> /snow/snow-env
+        git clone https://github.com/GDPU-JEE-Group/snow-env.git /snow/snow-env
         echo "git clone 仓库到 /snow/snow-env。"
     else
         echo "/snow/snow-env 已经存在。"
