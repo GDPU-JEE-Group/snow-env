@@ -91,7 +91,7 @@ setup_snow() {
 
     # 成功
     echo "成功!"
-    echo "成功!"
+    echo "source ~/.bashrc"
 }
 
 # 解析命令行参数
